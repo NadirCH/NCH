@@ -1,0 +1,736 @@
+            @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+             :root {
+                --primary-font: 'Sora', sans-serif;
+                --second-font: 'Work Sans', sans-serif;
+                --primary-color: #F1FAEE;
+                --second-color: #191970;
+                --accent-color: #f1a5a5;
+            }
+            
+            body {
+                background-color: var(--primary-color);
+            }
+            
+            ul {
+                list-style: none;
+            }
+            /*********DesktopVirsion***********************************************************/
+            
+            @media only screen and (min-width: 980px) {
+                /********************SectionOne******************/
+                /********************SectionOne******************/
+                /********************SectionOne******************/
+                header {
+                    width: 100%;
+                    height: 100vh;
+                    position: relative;
+                }
+                .logo {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%);
+                    margin-top: 3rem;
+                }
+                .logo img {
+                    width: 10rem;
+                }
+                .titleChange {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: var(--primary-font);
+                    font-size: 130px;
+                    text-transform: capitalize;
+                    font-weight: bolder;
+                    letter-spacing: 0px;
+                    line-height: 160px;
+                    color: var(--accent-color);
+                    text-align: center;
+                    opacity: .5;
+                    z-index: -1;
+                }
+                .wordchange::before {
+                    content: 'Website Devlopment';
+                    animation-name: myWordChange;
+                    animation-duration: 6s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                }
+                @keyframes myWordChange {
+                    0% {
+                        content: 'Website Design';
+                    }
+                    10% {
+                        content: 'Website Design';
+                    }
+                    19% {
+                        content: 'Website Design';
+                    }
+                    20% {
+                        content: 'UX & UI';
+                    }
+                    30% {
+                        content: 'UX & UI';
+                    }
+                    39% {
+                        content: 'UX & UI';
+                    }
+                    40% {
+                        content: 'Interactive experiences';
+                    }
+                    50% {
+                        content: 'Interactive experiences';
+                    }
+                    59% {
+                        content: 'Interactive experiences';
+                    }
+                    60% {
+                        content: 'Mobile App';
+                    }
+                    70% {
+                        content: 'Mobile App';
+                    }
+                    79% {
+                        content: 'Mobile App';
+                    }
+                    80% {
+                        content: 'Branding';
+                    }
+                    90% {
+                        content: 'Branding';
+                    }
+                    99% {
+                        content: 'Branding';
+                    }
+                    100% {
+                        content: 'Website Design';
+                    }
+                }
+                .heroTxt {
+                    width: 65%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: var(--primary-font);
+                    font-size: 2.5rem;
+                    line-height: 150%;
+                    color: var(--second-color);
+                    text-align: center;
+                }
+                a .icon {
+                    color: var(--accent-color);
+                }
+                .material-icons {
+                    position: absolute;
+                    color: var(--accent-color);
+                    top: 90%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .material-icons.md-48 {
+                    font-size: 6rem;
+                }
+                /********************SectionTow******************/
+                /********************SectionTow******************/
+                /********************SectionTow******************/
+                main {
+                    width: 100%;
+                    height: 200vh;
+                    background-color: var(--second-color);
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+                    grid-template-rows: repeat(4, 1fr);
+                }
+                .about {
+                    grid-column: 2/9;
+                    grid-row: 1/3;
+                    margin-top: 10rem;
+                    padding: 2rem 2rem;
+                    text-align: all-justify;
+                    line-height: 200%;
+                    color: var(--primary-color);
+                    font-size: 1.5rem;
+                    font-family: var(--second-font);
+                }
+                .aboutList {
+                    grid-column: 10/12;
+                    grid-row: 3/4;
+                    font-family: var(--second-font);
+                    font-size: 1rem;
+                    line-height: 180%;
+                    color: var(--accent-color);
+                }
+                .aboutFinal {
+                    grid-column: 2/12;
+                    grid-row: 4/5;
+                    padding: 0rem 2rem 4rem 2rem;
+                    font-family: var(--primary-font);
+                    color: var(--accent-color);
+                }
+                h1 {
+                    font-size: 128px;
+                }
+                h3 {
+                    font-size: 40px;
+                }
+                h4 {
+                    font-size: 68px;
+                }
+                .wordChangeTow::before {
+                    content: 'Passion';
+                    animation-name: myWordChangeTow;
+                    animation-duration: 6s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                }
+                @keyframes myWordChangeTow {
+                    0% {
+                        content: 'Passion';
+                    }
+                    10% {
+                        content: 'Passion';
+                    }
+                    19% {
+                        content: 'Passion';
+                    }
+                    20% {
+                        content: 'Mastering';
+                    }
+                    30% {
+                        content: 'Mastering';
+                    }
+                    39% {
+                        content: 'Mastering';
+                    }
+                    40% {
+                        content: 'Quality';
+                    }
+                    50% {
+                        content: 'Quality';
+                    }
+                    59% {
+                        content: 'Quality';
+                    }
+                    60% {
+                        content: 'Planning';
+                    }
+                    70% {
+                        content: 'Planning';
+                    }
+                    79% {
+                        content: 'Planning';
+                    }
+                    80% {
+                        content: 'Skills';
+                    }
+                    90% {
+                        content: 'Skills';
+                    }
+                    99% {
+                        content: 'Skills';
+                    }
+                    100% {
+                        content: 'Passion';
+                    }
+                }
+                /********************SectionThree******************/
+                /********************SectionThree******************/
+                /********************SectionThree******************/
+                .para {
+                    z-index: -100;
+                    width: 100%;
+                    height: 110vh;
+                    background-image: url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: fixed;
+                }
+                .parallax {
+                    z-index: -10;
+                    width: 100%;
+                    height: 110vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(241, 165, 165, .6);
+                }
+                .img {
+                    z-index: 100;
+                    width: 500px;
+                    height: 250px;
+                    background: transparent;
+                    border: 5px solid var(--primary-color);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .img img {
+                    width: 300px;
+                }
+                /********************SectionFoor******************/
+                /********************SectionFoor******************/
+                /********************SectionFoor******************/
+                .work {
+                    width: 100%;
+                    min-height: 100vh;
+                    display: grid;
+                    grid-template-columns: repeat(13, 1fr);
+                }
+                .workTxt {
+                    grid-column: 6/12;
+                    padding: 8rem 0;
+                    margin-top: 2rem;
+                    color: var(--second-color);
+                }
+                .workTxt h1 {
+                    font-family: var(--primary-font);
+                    font-size: 65px;
+                }
+                .workTxt p {
+                    font-family: var(--second-font);
+                    font-size: 25px;
+                    line-height: 180%;
+                    text-align: all-justify;
+                }
+                .boxOne {
+                    display: none;
+                }
+                .box1 {
+                    position: relative;
+                    grid-column: 2/8;
+                    width: 100%;
+                    height: 500px;
+                    background-color: var(--second-color);
+                    margin-bottom: 4rem;
+                    margin-top: 12rem;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .box2 {
+                    grid-column: 8/12;
+                    width: 100%;
+                    height: 500px;
+                    background-color: var(--second-color);
+                    margin: 12rem 2rem 15rem 2rem;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .overly1 {
+                    width: 100%;
+                    height: 500px;
+                }
+                .overly2 {
+                    width: 30.7%;
+                    height: 500px;
+                }
+                .overly1,
+                .overly2 {
+                    color: var(--primary-color);
+                    position: absolute;
+                    background-color: var(--second-color);
+                    opacity: 0;
+                    cursor: pointer;
+                    transition: .5s;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+                .overly1:hover,
+                .overly2:hover {
+                    opacity: .8;
+                }
+                .name {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 6rem;
+                    font-family: var(--primary-font);
+                    font-size: 2.5rem;
+                    letter-spacing: 5px;
+                }
+                .categore {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: -10rem;
+                    margin-bottom: 0;
+                    font-family: var(--second-font);
+                    font-size: .8rem;
+                    letter-spacing: 3px;
+                }
+                .cta {
+                    width: 100%;
+                    text-align: center;
+                    margin-top: -13rem;
+                    font-family: var(--second-font);
+                    color: var(--accent-color) !important;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+                /********************SectionFive******************/
+                /********************SectionFive******************/
+                /********************SectionFive******************/
+                footer {
+                    width: 100%;
+                    height: 100vh;
+                    background-color: #06D6B3;
+                    display: flex;
+                    align-items: center;
+                }
+                .getInTouch {
+                    width: 72%;
+                    margin: 0rem auto;
+                    font-family: var(--primary-font);
+                }
+                .getInTouch h1 {
+                    font-size: 60px;
+                    color: var(--second-color);
+                    margin: 1.3rem 0;
+                }
+                .getInTouch h2,
+                .getInTouch a {
+                    font-size: 35px;
+                    color: var(--primary-color);
+                    transition: .4s ease-in;
+                }
+                .getInTouch a:hover {
+                    color: var(--second-color);
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+            /*********MobileVirsion*************************************************************************************************************************************************************************************************************************************************/
+            
+            @media only screen and (max-width: 600px) {
+                /********************SectionOne******************/
+                /********************SectionOne******************/
+                /********************SectionOne******************/
+                header {
+                    width: 100%;
+                    height: 100vh;
+                    position: relative;
+                    overflow-x: hidden;
+                }
+                .logo {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%);
+                    margin-top: 4rem;
+                }
+                .logo img {
+                    width: 5rem;
+                }
+                .titleChange {
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: var(--primary-font);
+                    font-size: 30px;
+                    text-transform: capitalize;
+                    font-weight: bolder;
+                    letter-spacing: 0px;
+                    line-height: 60px;
+                    color: var(--accent-color);
+                    text-align: center;
+                    opacity: .5;
+                    z-index: -1;
+                }
+                .wordchange::before {
+                    content: 'Website Devlopment';
+                    animation-name: myWordChange;
+                    animation-duration: 6s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                }
+                @keyframes myWordChange {
+                    0% {
+                        content: 'Website Design';
+                    }
+                    10% {
+                        content: 'Website Design';
+                    }
+                    19% {
+                        content: 'Website Design';
+                    }
+                    20% {
+                        content: 'UX & UI';
+                    }
+                    30% {
+                        content: 'UX & UI';
+                    }
+                    39% {
+                        content: 'UX & UI';
+                    }
+                    40% {
+                        content: 'Interactive experiences';
+                    }
+                    50% {
+                        content: 'Interactive experiences';
+                    }
+                    59% {
+                        content: 'Interactive experiences';
+                    }
+                    60% {
+                        content: 'Mobile App';
+                    }
+                    70% {
+                        content: 'Mobile App';
+                    }
+                    79% {
+                        content: 'Mobile App';
+                    }
+                    80% {
+                        content: 'Branding';
+                    }
+                    90% {
+                        content: 'Branding';
+                    }
+                    99% {
+                        content: 'Branding';
+                    }
+                    100% {
+                        content: 'Website Design';
+                    }
+                }
+                .heroTxt {
+                    width: 70%;
+                    position: absolute;
+                    top: 32%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: var(--primary-font);
+                    font-size: 1rem;
+                    line-height: 150%;
+                    color: var(--second-color);
+                    text-align: center;
+                }
+                a .icon {
+                    color: var(--accent-color);
+                }
+                .material-icons {
+                    position: absolute;
+                    color: var(--accent-color);
+                    top: 80%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .material-icons.md-48 {
+                    font-size: 5rem;
+                }
+                /***********************************************SectionTow****/
+                /***********************************************SectionTow****/
+                /***********************************************SectionTow****/
+                main {
+                    width: 100%;
+                    min-height: 100vh;
+                    background-color: var(--second-color);
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .about {
+                    margin-top: 3rem;
+                    padding: 2rem 2rem;
+                    text-align: all-justify;
+                    line-height: 150%;
+                    color: var(--primary-color);
+                    font-size: 1rem;
+                    font-family: var(--second-font);
+                }
+                .aboutList {
+                    display: none;
+                }
+                .aboutFinal {
+                    padding: 0rem 2rem 4rem 2rem;
+                    font-family: var(--primary-font);
+                    color: var(--accent-color);
+                }
+                h1 {
+                    font-size: 35px;
+                    margin: 0 0 .7rem 0;
+                }
+                h3 {
+                    font-size: 13px;
+                }
+                h4 {
+                    font-size: 15px;
+                }
+                .wordChangeTow::before {
+                    content: 'Passion';
+                    animation-name: myWordChangeTow;
+                    animation-duration: 6s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+                }
+                @keyframes myWordChangeTow {
+                    0% {
+                        content: 'Passion';
+                    }
+                    10% {
+                        content: 'Passion';
+                    }
+                    19% {
+                        content: 'Passion';
+                    }
+                    20% {
+                        content: 'Mastering';
+                    }
+                    30% {
+                        content: 'Mastering';
+                    }
+                    39% {
+                        content: 'Mastering';
+                    }
+                    40% {
+                        content: 'Quality';
+                    }
+                    50% {
+                        content: 'Quality';
+                    }
+                    59% {
+                        content: 'Quality';
+                    }
+                    60% {
+                        content: 'Planning';
+                    }
+                    70% {
+                        content: 'Planning';
+                    }
+                    79% {
+                        content: 'Planning';
+                    }
+                    80% {
+                        content: 'Skills';
+                    }
+                    90% {
+                        content: 'Skills';
+                    }
+                    99% {
+                        content: 'Skills';
+                    }
+                    100% {
+                        content: 'Passion';
+                    }
+                }
+                /****************************************SectionThree***/
+                /****************************************SectionThree***/
+                /****************************************SectionThree***/
+                .para {
+                    z-index: -100;
+                    width: 100%;
+                    height: 80vh;
+                    background-image: url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .parallax {
+                    z-index: -10;
+                    width: 100%;
+                    height: 80vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(241, 165, 165, .6);
+                }
+                .img {
+                    z-index: 100;
+                    width: 200px;
+                    height: 100px;
+                    background: transparent;
+                    border: 5px solid var(--primary-color);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .img img {
+                    width: 120px;
+                }
+                /****************************************SectionFoor***/
+                /****************************************SectionFoor***/
+                /****************************************SectionFoor***/
+                .work {
+                    width: 100%;
+                    min-height: 100vh;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                .workTxt {
+                    padding: 8rem 0;
+                    color: var(--second-color);
+                    padding: 4rem 2rem;
+                }
+                .workTxt h1 {
+                    font-family: var(--primary-font);
+                    font-size: 35px;
+                }
+                .workTxt p {
+                    font-family: var(--second-font);
+                    font-size: 1rem;
+                    line-height: 150%;
+                    text-align: all-justify;
+                }
+                .boxOne {
+                    width: 90%;
+                    height: 250px;
+                    background-color: var(--second-color);
+                    margin: 0 auto;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .box1 {
+                    display: none;
+                }
+                .box2 {
+                    width: 90%;
+                    height: 250px;
+                    background-color: var(--second-color);
+                    margin: 3rem auto;
+                    background-image: url(/img/shot.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .overly2 {
+                    display: none;
+                }
+                /********************SectionFive******************/
+                footer {
+                    width: 100%;
+                    height: 50vh;
+                    background-color: #06D6B3;
+                    display: flex;
+                    align-items: center;
+                }
+                .getInTouch {
+                    padding: 0 2rem;
+                    margin: 0rem auto;
+                    font-family: var(--primary-font);
+                }
+                .getInTouch h1 {
+                    font-size: 29px;
+                    color: var(--second-color);
+                    margin: .7rem 0;
+                }
+                .getInTouch h2,
+                .getInTouch a {
+                    font-size: 15px;
+                    color: var(--primary-color);
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
